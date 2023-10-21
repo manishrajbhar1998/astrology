@@ -257,6 +257,7 @@ p {
 
 .zodic-roll {
     animation: rotateImg 15s linear infinite;
+    --webkit-animation: rotateImg 15s linear infinite;
     padding: 20px;
 
 }
