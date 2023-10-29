@@ -166,8 +166,8 @@ p {
 }
 
 .wrapper {
-    padding-top: 8.25rem;
-    padding-bottom: 8.25rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
 }
 
 .text-content {
@@ -307,6 +307,40 @@ p {
     padding-left: 2rem;
 }
 
+.fact-card {
+    border: 1px solid red !important;
+    /* display: grid !important; */
+    /* grid-template-columns: 1fr 2fr; */
+    position: relative;
+    height: 100;
+}
+
+.fact-card img {
+    max-width: 200px;
+    position: relative;
+}
+
+.fact-card img:first-child {
+    top: 0px;
+    left: 20%;
+}
+
+.fact-card img:nth-child(2) {
+    top: -80%;
+    left: 10%;
+    border: 1px solid red;
+}
+
+.fact-card img:nth-child(3) {
+    top: 100%;
+    left: 50%;
+}
+
+.fact-card img:nth-child(4) {
+    top: 0;
+    left: 70%;
+}
+
 /* foot-type */
 .food-type {
     padding-top: 3.25rem;
@@ -348,21 +382,36 @@ p {
 
 /*
 =================================== 
-        explore-food section
+        service section
 =================================== 
 */
-.explore-food .card {
+#service {
+    background: #f9f6f0;
+}
+
+.service .card {
     border: none;
     background-color: transparent;
     border-radius: 0.925rem;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* box-shadow: 0px 0.5px 10px 0.1px lightgray; */
+    /* box-shadow: 5px -5px 0px 5px lightgray; */
+    padding: 10px;
+    background: #fff;
 }
 
-.explore-food .card img {
+.service .card img {
     border-radius: 0.925rem;
     object-fit: cover;
+    max-width: 200px;
+    /* border: 1px solid #000; */
+
 }
 
-.explore-food .card span {
+.service .card h4 {
     display: block;
     font-size: 1.5rem;
     font-weight: 700;
@@ -371,10 +420,7 @@ p {
     border-bottom: 0.0625rem solid #eee;
 }
 
-.explore-food .card span del {
-    color: var(--text-gray);
-    margin-left: 0.5rem;
-}
+
 
 /*
 =================================== 
@@ -382,7 +428,7 @@ p {
 =================================== 
 */
 .testimonial-section {
-    background-color: var(--primary-color);
+    /* background-color: var(--third-color); */
 }
 
 .testimonial-section .carousel-item {
@@ -391,6 +437,7 @@ p {
     background-color: var(--white-color);
     border-radius: 0.9856rem;
     text-align: center;
+    border: 1px solid var(--primary-color);
 }
 
 .testimonial-section .carousel-caption img {
@@ -474,11 +521,63 @@ p {
     color: var(--primary-color);
 }
 
+/* 
+===================================
+        Zodiac section
+===================================*/
+
+#zodiac {
+    background: #f9f6f0;
+    box-sizing: border-box;
+
+}
+
+.zodiac-head p {
+    max-width: 600px;
+}
+
+.zodiac-card-parent {
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.zodiac-card {
+    background: #fff;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 190px;
+}
+
+
+.zodiac-card img {
+    box-shadow: -1px 0px 2px 0px lightgray;
+    /* border: 1px solid red; */
+    padding: 5px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.zodiac-card h2 {
+    font-size: 18px;
+}
+
 /*
 =================================== 
         footer section
 =================================== 
 */
+
+
 .footer {
     background-color: var(--bg-1);
 }
